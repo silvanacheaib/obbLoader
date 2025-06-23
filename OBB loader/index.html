@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBB Loader</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/loader.css">
+</head>
+<body>
+
+    <!-- background video and image-->
+    <div class="backgroundLoader">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="./assets/blue_particles-background(screen).mp4" type="video/mp4">
+        </video>
+        <div class="image-overlay">
+            <img src="./assets/grunge(overlay).png" alt="">
+        </div>
+    </div>
+
+    <!--center of the loader-->
+    <div class="centered-loader">
+        <!--big circle-->
+        <div class="center-img">
+            <img src="./assets/Ellipse 6333.png" alt="">
+        </div>
+        <!--rotating circle-->
+        <div class="progress-percentage ">
+            <div class="video-loader">
+                <video class="center-loop" autoplay muted loop playsinline>
+                    <source src="./assets/ring(overlay).mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="loader">
+                <p id="percent" class="loader-percentage">0%</p>
+            </div>
+        </div>
+
+        <div>
+            <p class="loading-text">LOADING</p>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/loader.js"></script>
+</body>
+</html>
